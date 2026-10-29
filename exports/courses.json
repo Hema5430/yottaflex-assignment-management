@@ -1,0 +1,452 @@
+[
+  {
+    "course_id": "CRS-2026-000001",
+    "course_name": "Synthetic Course 001",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000002",
+    "course_name": "Synthetic Course 002",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000003",
+    "course_name": "Synthetic Course 003",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000004",
+    "course_name": "Synthetic Course 004",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000005",
+    "course_name": "Synthetic Course 005",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000006",
+    "course_name": "Synthetic Course 006",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000007",
+    "course_name": "Synthetic Course 007",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000008",
+    "course_name": "Synthetic Course 008",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000009",
+    "course_name": "Synthetic Course 009",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000010",
+    "course_name": "Synthetic Course 010",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000011",
+    "course_name": "Synthetic Course 011",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000012",
+    "course_name": "Synthetic Course 012",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000013",
+    "course_name": "Synthetic Course 013",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000014",
+    "course_name": "Synthetic Course 014",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000015",
+    "course_name": "Synthetic Course 015",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000016",
+    "course_name": "Synthetic Course 016",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000017",
+    "course_name": "Synthetic Course 017",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000018",
+    "course_name": "Synthetic Course 018",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000019",
+    "course_name": "Synthetic Course 019",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000020",
+    "course_name": "Synthetic Course 020",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000021",
+    "course_name": "Synthetic Course 021",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000022",
+    "course_name": "Synthetic Course 022",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000023",
+    "course_name": "Synthetic Course 023",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000024",
+    "course_name": "Synthetic Course 024",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000025",
+    "course_name": "Synthetic Course 025",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000026",
+    "course_name": "Synthetic Course 026",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000027",
+    "course_name": "Synthetic Course 027",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000028",
+    "course_name": "Synthetic Course 028",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000029",
+    "course_name": "Synthetic Course 029",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000030",
+    "course_name": "Synthetic Course 030",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000031",
+    "course_name": "Synthetic Course 031",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000032",
+    "course_name": "Synthetic Course 032",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000033",
+    "course_name": "Synthetic Course 033",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000034",
+    "course_name": "Synthetic Course 034",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000035",
+    "course_name": "Synthetic Course 035",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000036",
+    "course_name": "Synthetic Course 036",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000037",
+    "course_name": "Synthetic Course 037",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000038",
+    "course_name": "Synthetic Course 038",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000039",
+    "course_name": "Synthetic Course 039",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000040",
+    "course_name": "Synthetic Course 040",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000041",
+    "course_name": "Synthetic Course 041",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000042",
+    "course_name": "Synthetic Course 042",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000043",
+    "course_name": "Synthetic Course 043",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000044",
+    "course_name": "Synthetic Course 044",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000045",
+    "course_name": "Synthetic Course 045",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000046",
+    "course_name": "Synthetic Course 046",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000047",
+    "course_name": "Synthetic Course 047",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000048",
+    "course_name": "Synthetic Course 048",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000049",
+    "course_name": "Synthetic Course 049",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  },
+  {
+    "course_id": "CRS-2026-000050",
+    "course_name": "Synthetic Course 050",
+    "description": "Generated course for workflow testing.",
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "status": "active",
+    "created_at": "2026-01-01T00:00:00+00:00"
+  }
+]

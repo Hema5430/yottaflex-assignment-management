@@ -1,0 +1,2 @@
+YottaFlex.ai Assignment Management System
+Python standard library only — no external dependencies required.

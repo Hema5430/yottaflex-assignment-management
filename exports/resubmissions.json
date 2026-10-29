@@ -1,0 +1,102 @@
+[
+  {
+    "resubmission_id": "RES-2026-000001",
+    "original_submission_id": "SUB-ASN-2026-000001-LRN-2026-000001-01",
+    "new_submission_id": "SUB-ASN-2026-000001-LRN-2026-000001-02",
+    "requested_at": "2026-10-22T12:00:00+00:00",
+    "decision": "approved",
+    "decided_by": "INS-2026-000001",
+    "decided_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Synthetic approved resubmission example."
+  },
+  {
+    "resubmission_id": "RES-2026-000002",
+    "original_submission_id": "SUB-ASN-2026-000001-LRN-2026-000051-01",
+    "new_submission_id": "SUB-ASN-2026-000001-LRN-2026-000051-02",
+    "requested_at": "2026-10-22T12:00:00+00:00",
+    "decision": "approved",
+    "decided_by": "INS-2026-000001",
+    "decided_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Synthetic approved resubmission example."
+  },
+  {
+    "resubmission_id": "RES-2026-000003",
+    "original_submission_id": "SUB-ASN-2026-000001-LRN-2026-000601-01",
+    "new_submission_id": "SUB-ASN-2026-000001-LRN-2026-000601-02",
+    "requested_at": "2026-10-22T12:00:00+00:00",
+    "decision": "approved",
+    "decided_by": "INS-2026-000001",
+    "decided_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Synthetic approved resubmission example."
+  },
+  {
+    "resubmission_id": "RES-2026-000004",
+    "original_submission_id": "SUB-ASN-2026-000001-LRN-2026-000751-01",
+    "new_submission_id": "SUB-ASN-2026-000001-LRN-2026-000751-02",
+    "requested_at": "2026-10-22T12:00:00+00:00",
+    "decision": "approved",
+    "decided_by": "INS-2026-000001",
+    "decided_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Synthetic approved resubmission example."
+  },
+  {
+    "resubmission_id": "RES-2026-000005",
+    "original_submission_id": "SUB-ASN-2026-000001-LRN-2026-001351-01",
+    "new_submission_id": "SUB-ASN-2026-000001-LRN-2026-001351-02",
+    "requested_at": "2026-10-22T12:00:00+00:00",
+    "decision": "approved",
+    "decided_by": "INS-2026-000001",
+    "decided_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Synthetic approved resubmission example."
+  },
+  {
+    "resubmission_id": "RES-2026-000006",
+    "original_submission_id": "SUB-ASN-2026-000001-LRN-2026-001451-01",
+    "new_submission_id": "SUB-ASN-2026-000001-LRN-2026-001451-02",
+    "requested_at": "2026-10-22T12:00:00+00:00",
+    "decision": "approved",
+    "decided_by": "INS-2026-000001",
+    "decided_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Synthetic approved resubmission example."
+  },
+  {
+    "resubmission_id": "RES-2026-000007",
+    "original_submission_id": "SUB-ASN-2026-000001-LRN-2026-001651-01",
+    "new_submission_id": "SUB-ASN-2026-000001-LRN-2026-001651-02",
+    "requested_at": "2026-10-22T12:00:00+00:00",
+    "decision": "approved",
+    "decided_by": "INS-2026-000001",
+    "decided_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Synthetic approved resubmission example."
+  },
+  {
+    "resubmission_id": "RES-2026-000008",
+    "original_submission_id": "SUB-ASN-2026-000001-LRN-2026-001901-01",
+    "new_submission_id": "SUB-ASN-2026-000001-LRN-2026-001901-02",
+    "requested_at": "2026-10-22T12:00:00+00:00",
+    "decision": "approved",
+    "decided_by": "INS-2026-000001",
+    "decided_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Synthetic approved resubmission example."
+  },
+  {
+    "resubmission_id": "RES-2026-000009",
+    "original_submission_id": "SUB-ASN-2026-000001-LRN-2026-002201-01",
+    "new_submission_id": "SUB-ASN-2026-000001-LRN-2026-002201-02",
+    "requested_at": "2026-10-22T12:00:00+00:00",
+    "decision": "approved",
+    "decided_by": "INS-2026-000001",
+    "decided_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Synthetic approved resubmission example."
+  },
+  {
+    "resubmission_id": "RES-2026-000010",
+    "original_submission_id": "SUB-ASN-2026-000001-LRN-2026-002451-01",
+    "new_submission_id": "SUB-ASN-2026-000001-LRN-2026-002451-02",
+    "requested_at": "2026-10-22T12:00:00+00:00",
+    "decision": "approved",
+    "decided_by": "INS-2026-000001",
+    "decided_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Synthetic approved resubmission example."
+  }
+]

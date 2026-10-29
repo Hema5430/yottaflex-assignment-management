@@ -1,0 +1,200 @@
+[
+  {
+    "event_id": "AUD-RES-2026-000001",
+    "entity_type": "Resubmission",
+    "entity_id": "RES-2026-000001",
+    "action": "approved",
+    "old_value": "pending",
+    "new_value": "approved",
+    "actor_id": "INS-2026-000001",
+    "occurred_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Resubmission approved under the assignment policy."
+  },
+  {
+    "event_id": "AUD-RES-2026-000002",
+    "entity_type": "Resubmission",
+    "entity_id": "RES-2026-000002",
+    "action": "approved",
+    "old_value": "pending",
+    "new_value": "approved",
+    "actor_id": "INS-2026-000001",
+    "occurred_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Resubmission approved under the assignment policy."
+  },
+  {
+    "event_id": "AUD-RES-2026-000003",
+    "entity_type": "Resubmission",
+    "entity_id": "RES-2026-000003",
+    "action": "approved",
+    "old_value": "pending",
+    "new_value": "approved",
+    "actor_id": "INS-2026-000001",
+    "occurred_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Resubmission approved under the assignment policy."
+  },
+  {
+    "event_id": "AUD-RES-2026-000004",
+    "entity_type": "Resubmission",
+    "entity_id": "RES-2026-000004",
+    "action": "approved",
+    "old_value": "pending",
+    "new_value": "approved",
+    "actor_id": "INS-2026-000001",
+    "occurred_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Resubmission approved under the assignment policy."
+  },
+  {
+    "event_id": "AUD-RES-2026-000005",
+    "entity_type": "Resubmission",
+    "entity_id": "RES-2026-000005",
+    "action": "approved",
+    "old_value": "pending",
+    "new_value": "approved",
+    "actor_id": "INS-2026-000001",
+    "occurred_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Resubmission approved under the assignment policy."
+  },
+  {
+    "event_id": "AUD-RES-2026-000006",
+    "entity_type": "Resubmission",
+    "entity_id": "RES-2026-000006",
+    "action": "approved",
+    "old_value": "pending",
+    "new_value": "approved",
+    "actor_id": "INS-2026-000001",
+    "occurred_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Resubmission approved under the assignment policy."
+  },
+  {
+    "event_id": "AUD-RES-2026-000007",
+    "entity_type": "Resubmission",
+    "entity_id": "RES-2026-000007",
+    "action": "approved",
+    "old_value": "pending",
+    "new_value": "approved",
+    "actor_id": "INS-2026-000001",
+    "occurred_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Resubmission approved under the assignment policy."
+  },
+  {
+    "event_id": "AUD-RES-2026-000008",
+    "entity_type": "Resubmission",
+    "entity_id": "RES-2026-000008",
+    "action": "approved",
+    "old_value": "pending",
+    "new_value": "approved",
+    "actor_id": "INS-2026-000001",
+    "occurred_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Resubmission approved under the assignment policy."
+  },
+  {
+    "event_id": "AUD-RES-2026-000009",
+    "entity_type": "Resubmission",
+    "entity_id": "RES-2026-000009",
+    "action": "approved",
+    "old_value": "pending",
+    "new_value": "approved",
+    "actor_id": "INS-2026-000001",
+    "occurred_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Resubmission approved under the assignment policy."
+  },
+  {
+    "event_id": "AUD-RES-2026-000010",
+    "entity_type": "Resubmission",
+    "entity_id": "RES-2026-000010",
+    "action": "approved",
+    "old_value": "pending",
+    "new_value": "approved",
+    "actor_id": "INS-2026-000001",
+    "occurred_at": "2026-10-22T12:00:00+00:00",
+    "reason": "Resubmission approved under the assignment policy."
+  },
+  {
+    "event_id": "AUD-GRADE-2026-000001",
+    "entity_type": "Grade",
+    "entity_id": "SUB-ASN-2026-000001-LRN-2026-000001-01",
+    "action": "grade_revised",
+    "old_value": "57.0",
+    "new_value": "59.0",
+    "actor_id": "INS-2026-000002",
+    "occurred_at": "2026-10-23T12:00:00+00:00",
+    "reason": "Appeal decision: Grade revised after appeal review."
+  },
+  {
+    "event_id": "AUD-APPEAL-2026-000001",
+    "entity_type": "Appeal",
+    "entity_id": "APP-2026-000001",
+    "action": "decided",
+    "old_value": "pending",
+    "new_value": "grade_changed",
+    "actor_id": "ADM-2026-000001",
+    "occurred_at": "2026-10-23T12:00:00+00:00",
+    "reason": "Grade revised after appeal review."
+  },
+  {
+    "event_id": "AUD-GRADE-2026-000002",
+    "entity_type": "Grade",
+    "entity_id": "SUB-ASN-2026-000001-LRN-2026-000051-01",
+    "action": "grade_revised",
+    "old_value": "78.0",
+    "new_value": "80.0",
+    "actor_id": "INS-2026-000002",
+    "occurred_at": "2026-10-23T12:00:00+00:00",
+    "reason": "Appeal decision: Grade revised after appeal review."
+  },
+  {
+    "event_id": "AUD-APPEAL-2026-000002",
+    "entity_type": "Appeal",
+    "entity_id": "APP-2026-000002",
+    "action": "decided",
+    "old_value": "pending",
+    "new_value": "grade_changed",
+    "actor_id": "ADM-2026-000001",
+    "occurred_at": "2026-10-23T12:00:00+00:00",
+    "reason": "Grade revised after appeal review."
+  },
+  {
+    "event_id": "AUD-GRADE-2026-000003",
+    "entity_type": "Grade",
+    "entity_id": "SUB-ASN-2026-000001-LRN-2026-000601-01",
+    "action": "grade_revised",
+    "old_value": "66.0",
+    "new_value": "68.0",
+    "actor_id": "INS-2026-000002",
+    "occurred_at": "2026-10-23T12:00:00+00:00",
+    "reason": "Appeal decision: Grade revised after appeal review."
+  },
+  {
+    "event_id": "AUD-APPEAL-2026-000003",
+    "entity_type": "Appeal",
+    "entity_id": "APP-2026-000003",
+    "action": "decided",
+    "old_value": "pending",
+    "new_value": "grade_changed",
+    "actor_id": "ADM-2026-000001",
+    "occurred_at": "2026-10-23T12:00:00+00:00",
+    "reason": "Grade revised after appeal review."
+  },
+  {
+    "event_id": "AUD-APPEAL-2026-000004",
+    "entity_type": "Appeal",
+    "entity_id": "APP-2026-000004",
+    "action": "decided",
+    "old_value": "pending",
+    "new_value": "rejected",
+    "actor_id": "ADM-2026-000001",
+    "occurred_at": "2026-10-23T12:00:00+00:00",
+    "reason": "Original grade upheld after review."
+  },
+  {
+    "event_id": "AUD-APPEAL-2026-000005",
+    "entity_type": "Appeal",
+    "entity_id": "APP-2026-000005",
+    "action": "decided",
+    "old_value": "pending",
+    "new_value": "rejected",
+    "actor_id": "ADM-2026-000001",
+    "occurred_at": "2026-10-23T12:00:00+00:00",
+    "reason": "Original grade upheld after review."
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "appeal_id": "APP-2026-000001",
+    "submission_id": "SUB-ASN-2026-000001-LRN-2026-000001-01",
+    "grade_id": "GRD-SUB-ASN-2026-000001-LRN-2026-000001-01",
+    "learner_id": "LRN-2026-000001",
+    "reason": "Synthetic appeal requesting a rubric review.",
+    "filed_at": "2026-10-23T12:00:00+00:00",
+    "status": "grade_changed",
+    "decision": "Grade revised after appeal review.",
+    "decided_by": "ADM-2026-000001",
+    "decided_at": "2026-10-23T12:00:00+00:00",
+    "revised_grade_id": "GRD-REV-000001"
+  },
+  {
+    "appeal_id": "APP-2026-000002",
+    "submission_id": "SUB-ASN-2026-000001-LRN-2026-000051-01",
+    "grade_id": "GRD-SUB-ASN-2026-000001-LRN-2026-000051-01",
+    "learner_id": "LRN-2026-000051",
+    "reason": "Synthetic appeal requesting a rubric review.",
+    "filed_at": "2026-10-23T12:00:00+00:00",
+    "status": "grade_changed",
+    "decision": "Grade revised after appeal review.",
+    "decided_by": "ADM-2026-000001",
+    "decided_at": "2026-10-23T12:00:00+00:00",
+    "revised_grade_id": "GRD-REV-000002"
+  },
+  {
+    "appeal_id": "APP-2026-000003",
+    "submission_id": "SUB-ASN-2026-000001-LRN-2026-000601-01",
+    "grade_id": "GRD-SUB-ASN-2026-000001-LRN-2026-000601-01",
+    "learner_id": "LRN-2026-000601",
+    "reason": "Synthetic appeal requesting a rubric review.",
+    "filed_at": "2026-10-23T12:00:00+00:00",
+    "status": "grade_changed",
+    "decision": "Grade revised after appeal review.",
+    "decided_by": "ADM-2026-000001",
+    "decided_at": "2026-10-23T12:00:00+00:00",
+    "revised_grade_id": "GRD-REV-000003"
+  },
+  {
+    "appeal_id": "APP-2026-000004",
+    "submission_id": "SUB-ASN-2026-000001-LRN-2026-000751-01",
+    "grade_id": "GRD-SUB-ASN-2026-000001-LRN-2026-000751-01",
+    "learner_id": "LRN-2026-000751",
+    "reason": "Synthetic appeal requesting a rubric review.",
+    "filed_at": "2026-10-23T12:00:00+00:00",
+    "status": "rejected",
+    "decision": "Original grade upheld after review.",
+    "decided_by": "ADM-2026-000001",
+    "decided_at": "2026-10-23T12:00:00+00:00",
+    "revised_grade_id": null
+  },
+  {
+    "appeal_id": "APP-2026-000005",
+    "submission_id": "SUB-ASN-2026-000001-LRN-2026-001351-01",
+    "grade_id": "GRD-SUB-ASN-2026-000001-LRN-2026-001351-01",
+    "learner_id": "LRN-2026-001351",
+    "reason": "Synthetic appeal requesting a rubric review.",
+    "filed_at": "2026-10-23T12:00:00+00:00",
+    "status": "rejected",
+    "decision": "Original grade upheld after review.",
+    "decided_by": "ADM-2026-000001",
+    "decided_at": "2026-10-23T12:00:00+00:00",
+    "revised_grade_id": null
+  },
+  {
+    "appeal_id": "ANOM-APP-004",
+    "submission_id": "SUB-ASN-2026-000001-LRN-2026-001451-01",
+    "grade_id": "GRD-SUB-ASN-2026-000001-LRN-2026-001451-01",
+    "learner_id": "LRN-2026-001451",
+    "reason": "Synthetic appeal testing missing grade audit history.",
+    "filed_at": "2026-10-24T09:00:00",
+    "status": "grade_changed",
+    "decision": "Grade revised without audit event",
+    "decided_by": "INS-2026-000001",
+    "decided_at": "2026-10-25T10:00:00",
+    "revised_grade_id": "ANOM-GRD-004"
+  }
+]

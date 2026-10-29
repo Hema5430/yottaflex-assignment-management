@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YottaFlex | Assignment Intelligence</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">Y</div><div><strong>YottaFlex</strong><small>ASSIGNMENT INTELLIGENCE</small></div></div>
+      <div class="role-switch">
+        <label for="roleSelect">Workspace</label>
+        <select id="roleSelect"><option value="student">Student portal</option><option value="instructor">Instructor workspace</option><option value="admin">Operations overview</option></select>
+      </div>
+      <nav id="nav">
+        <button class="nav-item active" data-view="home"><span>◫</span> Overview</button>
+        <button class="nav-item" data-view="assignments"><span>▤</span> My assignments</button>
+        <button class="nav-item" data-view="submissions"><span>↗</span> My submissions</button>
+        <button class="nav-item" data-view="reviews"><span>☷</span> Review queue</button>
+        <button class="nav-item" data-view="assistant"><span>✦</span> AI assistant</button>
+        <button class="nav-item" data-view="audit"><span>◷</span> Activity history</button>
+      </nav>
+      <div class="sidebar-bottom"><span class="online-dot"></span><span>Local workspace connected</span><small>Demo data · SQLite</small></div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div><div class="eyebrow">LEARNING OPERATIONS / 2026</div><h1 id="pageTitle">Your learning overview</h1><p id="pageSubtitle">Track assignments, submissions, and feedback in one place.</p></div>
+        <div class="profile"><div class="avatar" id="avatar">SL</div><div><strong id="profileName">Demo learner</strong><small id="profileRole">Student workspace</small></div></div>
+      </header>
+      <section id="identityBar" class="identity-bar">
+        <label for="learnerSearch">Demo learner</label>
+        <input id="learnerSearch" placeholder="Search learner name or ID…" value="LRN-2026-000001">
+        <button class="btn btn-quiet" id="useLearner">Load profile</button>
+        <span class="muted">Use a synthetic learner ID to explore the demo.</span>
+      </section>
+      <section id="content" aria-live="polite"><div class="loading">Loading your workspace…</div></section>
+      <footer><span>YottaFlex Assignment Intelligence</span><span>Rule-based decisions · AI-assisted explanations</span></footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

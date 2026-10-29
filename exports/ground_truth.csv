@@ -1,0 +1,5 @@
+case_id,issue_type,entity_type,expected_outcome
+ANOM-001,unenrolled_learner_submission,Submission,Reject or flag submission because learner is not enrolled in the course.
+ANOM-002,grade_exceeds_rubric_maximum,Grade,Flag grade because raw score exceeds the rubric maximum.
+ANOM-003,duplicate_late_penalty,Grade,Flag duplicate penalty application; apply the policy once.
+ANOM-004,appeal_without_audit_history,Appeal,Flag grade change because an audit event is missing.

@@ -1,0 +1,19 @@
+event_id,entity_type,entity_id,action,old_value,new_value,actor_id,occurred_at,reason
+AUD-RES-2026-000001,Resubmission,RES-2026-000001,approved,pending,approved,INS-2026-000001,2026-10-22T12:00:00+00:00,Resubmission approved under the assignment policy.
+AUD-RES-2026-000002,Resubmission,RES-2026-000002,approved,pending,approved,INS-2026-000001,2026-10-22T12:00:00+00:00,Resubmission approved under the assignment policy.
+AUD-RES-2026-000003,Resubmission,RES-2026-000003,approved,pending,approved,INS-2026-000001,2026-10-22T12:00:00+00:00,Resubmission approved under the assignment policy.
+AUD-RES-2026-000004,Resubmission,RES-2026-000004,approved,pending,approved,INS-2026-000001,2026-10-22T12:00:00+00:00,Resubmission approved under the assignment policy.
+AUD-RES-2026-000005,Resubmission,RES-2026-000005,approved,pending,approved,INS-2026-000001,2026-10-22T12:00:00+00:00,Resubmission approved under the assignment policy.
+AUD-RES-2026-000006,Resubmission,RES-2026-000006,approved,pending,approved,INS-2026-000001,2026-10-22T12:00:00+00:00,Resubmission approved under the assignment policy.
+AUD-RES-2026-000007,Resubmission,RES-2026-000007,approved,pending,approved,INS-2026-000001,2026-10-22T12:00:00+00:00,Resubmission approved under the assignment policy.
+AUD-RES-2026-000008,Resubmission,RES-2026-000008,approved,pending,approved,INS-2026-000001,2026-10-22T12:00:00+00:00,Resubmission approved under the assignment policy.
+AUD-RES-2026-000009,Resubmission,RES-2026-000009,approved,pending,approved,INS-2026-000001,2026-10-22T12:00:00+00:00,Resubmission approved under the assignment policy.
+AUD-RES-2026-000010,Resubmission,RES-2026-000010,approved,pending,approved,INS-2026-000001,2026-10-22T12:00:00+00:00,Resubmission approved under the assignment policy.
+AUD-GRADE-2026-000001,Grade,SUB-ASN-2026-000001-LRN-2026-000001-01,grade_revised,57.0,59.0,INS-2026-000002,2026-10-23T12:00:00+00:00,Appeal decision: Grade revised after appeal review.
+AUD-APPEAL-2026-000001,Appeal,APP-2026-000001,decided,pending,grade_changed,ADM-2026-000001,2026-10-23T12:00:00+00:00,Grade revised after appeal review.
+AUD-GRADE-2026-000002,Grade,SUB-ASN-2026-000001-LRN-2026-000051-01,grade_revised,78.0,80.0,INS-2026-000002,2026-10-23T12:00:00+00:00,Appeal decision: Grade revised after appeal review.
+AUD-APPEAL-2026-000002,Appeal,APP-2026-000002,decided,pending,grade_changed,ADM-2026-000001,2026-10-23T12:00:00+00:00,Grade revised after appeal review.
+AUD-GRADE-2026-000003,Grade,SUB-ASN-2026-000001-LRN-2026-000601-01,grade_revised,66.0,68.0,INS-2026-000002,2026-10-23T12:00:00+00:00,Appeal decision: Grade revised after appeal review.
+AUD-APPEAL-2026-000003,Appeal,APP-2026-000003,decided,pending,grade_changed,ADM-2026-000001,2026-10-23T12:00:00+00:00,Grade revised after appeal review.
+AUD-APPEAL-2026-000004,Appeal,APP-2026-000004,decided,pending,rejected,ADM-2026-000001,2026-10-23T12:00:00+00:00,Original grade upheld after review.
+AUD-APPEAL-2026-000005,Appeal,APP-2026-000005,decided,pending,rejected,ADM-2026-000001,2026-10-23T12:00:00+00:00,Original grade upheld after review.

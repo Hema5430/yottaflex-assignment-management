@@ -1,0 +1,15 @@
+# Secrets
+.env
+.env.*
+
+# Python environments and cache
+.venv/
+.venv-ai/
+__pycache__/
+*.py[cod]
+
+# Local backups
+backups/
+
+# Local database
+data/*.db
