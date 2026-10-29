@@ -560,10 +560,6 @@ Potential next steps include:
 
 GitHub: [Hema5430](https://github.com/Hema5430)
 
-**Project:** YottaFlex.ai Assignment Management & AI-Powered Anomaly Intelligence
-
-Prepared as a take-home assignment for the Associate AI Forward Deployed Engineer role at YottaFlex.ai.
-
 ---
 
 *This project demonstrates the integration of relational data modeling, Python automation, deterministic business-rule validation, web application development, and LLM-powered assistance for human reviewers.*
