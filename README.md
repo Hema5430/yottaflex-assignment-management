@@ -1,196 +1,295 @@
-# YottaFlex.ai — Assignment Management Data Pipeline
+# YottaFlex.ai — AI-Powered Assignment Management & Anomaly Intelligence
 
-## 1. Project Overview
+An assignment-management application that combines academic workflows, grading validation, deterministic anomaly detection, and **LLM-powered explanations** to help reviewers understand suspicious or inconsistent records and decide what to investigate next.
 
-This project implements a reproducible, database-driven assignment management pipeline for an educational platform. It models the assignment lifecycle, including assignment publication, learner submissions, rubric-based grading, feedback, resubmissions, late penalties, appeals, and grade revisions.
+## Project Overview
 
-The pipeline uses Python and SQLite to generate synthetic data, enforce data-quality checks, detect intentionally injected anomalies, validate workflow history, and export datasets in CSV, JSON, and SQL formats.
+YottaFlex.ai is designed to support the assignment lifecycle, from learner submissions to grading, feedback, resubmissions, appeals, and audit history. It also identifies potential data-quality and grading anomalies using explicit Python business rules.
 
-## 2. Objectives
+The application integrates a Large Language Model (LLM) to turn detected anomalies into understandable explanations and suggested reviewer actions.
 
-- Build a relational data model with primary keys, foreign keys, and relationships between entities.
-- Generate deterministic synthetic data using a fixed random seed.
-- Validate data integrity and workflow consistency.
-- Detect predefined data anomalies using explicit business rules.
-- Preserve grade revisions, appeals, and audit history.
-- Export database tables for inspection and downstream analysis.
-- Make the pipeline reproducible and easy to execute locally.
+**Core design principle:** Business-rule decisions remain deterministic and verifiable in Python. The LLM provides explanations; it does not independently decide whether an anomaly exists.
 
-## 3. Technology Stack
+## Key Features
 
-- **Language:** Python
-- **Database:** SQLite
-- **Data formats:** CSV, JSON, SQL
-- **Testing:** Python `unittest`
-- **Dependencies:** Python standard library
+### 1. Assignment Management
 
-No third-party Python packages are required for the current implementation.
+- Learner assignment submissions.
+- Submission and grading workflows.
+- Grading feedback and revision history.
+- Resubmission requests and approval workflows.
+- Grade appeals and review tracking.
+- Audit events for relevant workflow actions.
+- SQLite-backed persistence for application records.
 
-## 4. Data Model
+### 2. Deterministic Anomaly Detection
 
-The database represents the main entities involved in assignment management, including:
+The anomaly detection engine applies explicit business rules to identify suspicious records. Its findings can be inspected and validated against known anomaly scenarios.
 
-- Courses
-- Learners
-- Enrollments
-- Assignments
-- Rubrics and rubric criteria
-- Submissions and submission artifacts
-- Grades and grade revisions
-- Feedback
-- Resubmission requests
-- Appeals
-- Audit events
-- Validation issues
+Examples include:
 
-Primary and foreign keys connect related records and help preserve referential integrity. Grade revisions and audit events provide a history of relevant workflow changes.
+- **Unenrolled learner submission:** A submission exists for a learner who is not enrolled in the corresponding course.
+- **Grade exceeds rubric maximum:** A recorded grade or criterion score violates the configured rubric limit.
+- **Duplicate late penalty:** A late penalty may have been applied more than once.
+- **Appeal without audit history:** An appeal is missing the expected audit trail.
 
-## 5. Synthetic Dataset
+The detector produces structured findings for review instead of relying on an LLM to make the underlying business decision.
 
-The pipeline uses a deterministic seed of `20261022` to support repeatable data generation.
+### 3. LLM-Powered Anomaly Explanation — AI Highlight
 
-The expected baseline dataset contains:
+The application integrates the Groq API and an LLM to make anomaly findings easier to understand and act upon.
 
-| Entity | Expected count |
-|---|---:|
-| Courses | 50 |
-| Learners | 10,000 |
-| Assignments | 1,000 |
-| Original submissions | 30,000 |
-| Original submission artifacts | 30,000 |
-| Original grades | 30,000 |
-| Original feedback records | 30,000 |
+Rather than using the LLM as an unrestricted anomaly classifier, the application uses it as an **explanation and reviewer-assistance layer**.
 
-The final database also contains workflow records and intentionally injected anomaly cases. Therefore, final table counts may differ from the baseline counts shown above.
+The AI assistant is intended to help reviewers understand:
 
-## 6. Anomaly Detection
+- **What happened:** A clear, human-readable explanation of the detected issue.
+- **Which business rule is relevant:** The rule or expected condition associated with the finding.
+- **Why it matters:** The potential impact on grading integrity, workflow consistency, or data quality.
+- **What to investigate next:** Suggested evidence checks and reviewer actions.
+- **How to communicate the finding:** A concise explanation that helps technical and non-technical reviewers understand the issue.
 
-The pipeline injects and detects four predefined anomaly categories:
+For example, if a grade exceeds the maximum allowed by a rubric, the deterministic detector identifies the violation. The LLM can then explain that the score exceeds the permitted maximum and suggest checking the rubric configuration, criterion-level scores, and grading records before approving a correction.
 
-1. **Submission by an unenrolled learner:** A learner submits work for a course in which they are not enrolled.
-2. **Grade exceeding the rubric maximum:** A recorded score exceeds the maximum allowed by the rubric.
-3. **Duplicate late penalty:** A late penalty is applied more than once.
-4. **Appeal without audit history:** An appeal changes a grade without the required audit event.
+#### AI architecture and responsible use
 
-The detection logic uses SQL queries and explicit business rules. These cases are intentionally introduced for validation and demonstration; they should not be interpreted as naturally occurring production incidents.
+The AI integration follows a separation-of-responsibilities approach:
 
-## 7. Project Structure
+1. **Data layer:** SQLite stores assignment, submission, grading, appeal, and audit records.
+2. **Rule-based detection layer:** Python checks records against explicit business rules.
+3. **AI explanation layer:** The Groq API sends the relevant question and application context to the configured LLM.
+4. **Reviewer layer:** The reviewer uses the explanation and suggested actions to investigate the finding.
+
+The LLM does not replace the deterministic validation logic or automatically authorize grade changes. Reviewers remain responsible for decisions requiring investigation or correction.
+
+**Configured model:** `openai/gpt-oss-20b`  
+**LLM provider:** Groq API  
+**Integration:** Python Groq SDK
+
+The model is configured through environment variables so credentials are not hardcoded into application source code.
+
+### 4. Data Integrity and Validation
+
+The project includes scripts for generating synthetic data, creating workflow scenarios, injecting known anomalies, exporting data, and validating database integrity.
+
+Validation covers:
+
+- Expected record counts for the baseline generated dataset.
+- Foreign-key integrity.
+- Unexpected invalid grades.
+- Submissions from unenrolled learners.
+- Workflow consistency, including resubmissions, appeals, and audit events.
+- Known anomaly scenarios and their expected findings.
+
+The data validator distinguishes the original synthetic dataset from injected anomalies and website-created submissions when checking baseline record counts.
+
+### 5. Data Export and Inspection
+
+The project includes CSV, JSON, and SQL exports for supported database entities, along with utilities for inspecting records and anomaly findings.
+
+Exports are useful for reviewing the generated dataset, debugging validation issues, and inspecting the output of the application.
+
+## Technology Stack
+
+| Component | Technologies |
+|---|---|
+| Programming language | Python |
+| Web application | FastAPI, Uvicorn |
+| Additional UI | Streamlit components and Python UI modules |
+| Database | SQLite |
+| AI integration | Groq API, Groq Python SDK |
+| Language model | OpenAI GPT-OSS 20B, accessed through Groq |
+| Frontend | HTML, CSS, JavaScript |
+| Data processing | Python, CSV, JSON, SQL |
+| Testing and validation | pytest, custom validation scripts |
+| Development tools | VS Code, Git, GitHub |
+
+## Project Structure
 
 ```text
-yottaflex-project/
+yottaflex-assignment-management/
+├── app.py
 ├── src/
-│   ├── main.py
+│   ├── database.py
+│   ├── schema.sql
 │   ├── generate_data.py
+│   ├── generate_workflows.py
 │   ├── inject_anomalies.py
 │   ├── detect_anomalies.py
+│   ├── inspect_anomalies.py
+│   ├── export_data.py
+│   ├── app_queries.py
 │   ├── validate_data.py
 │   ├── validate_workflows.py
-│   └── export_data.py
+│   └── check_database.py
+├── webapp/
+│   ├── main.py
+│   └── static/
+│       ├── index.html
+│       ├── styles.css
+│       └── app.js
+├── ui/
+│   ├── staff.py
+│   └── student.py
 ├── tests/
-├── data/
-├── exports/
+│   └── test_schema.py
 ├── docs/
-├── backups/
-├── .gitignore
+│   └── data_dictionary.md
+├── exports/
 ├── requirements.txt
-└── README.md
+├── requirements-web.txt
+├── README.md
+└── README_WEBAPP.md
 ```
 
-The exact files may vary slightly depending on the final packaged version. Generated databases and backups should not be committed unless they are intentionally included as documented sample artifacts.
-
-## 8. Setup and Execution
+## Getting Started
 
 ### Prerequisites
 
-- Python 3.8 or later
-- Git (optional, for version control)
+- Python 3.8 or a compatible version supported by the installed dependencies.
+- Git.
+- A Groq API key for the LLM explanation feature.
 
-### Create a virtual environment
+### 1. Clone the repository
 
-**Windows PowerShell:**
+```bash
+git clone https://github.com/Hema5430/yottaflex-assignment-management.git
+cd yottaflex-assignment-management
+```
+
+### 2. Create a virtual environment
+
+Windows PowerShell:
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-If PowerShell blocks virtual-environment activation, use the environment's Python executable directly.
+If PowerShell blocks activation, use the appropriate execution policy for your session.
 
-### Install dependencies
+### 3. Install dependencies
 
-The current implementation uses only the Python standard library, so installing external packages is not required.
-
-### Run the pipeline
-
-From the project root directory:
+Install the base dependencies:
 
 ```powershell
-python -m src.main
+python -m pip install -r requirements.txt
 ```
 
-The pipeline runs the available generation, anomaly-injection, validation, detection, and export steps.
-
-**Important:** Run the full generation pipeline on a fresh or backed-up database when rebuilding the dataset. Do not rerun data-generation or anomaly-injection steps against an existing database unless the scripts explicitly support safe repeated execution.
-
-### Run automated tests
+Install the additional web application dependencies:
 
 ```powershell
-python -m unittest discover -s tests -v
+python -m pip install -r requirements-web.txt
 ```
 
-The tests cover database structure, baseline data counts, anomaly scenarios, resubmissions, appeals, and audit history.
+### 4. Configure the LLM API key
 
-## 9. Outputs
+Create a `.env` file in the project root:
 
-The pipeline produces:
+```env
+GROQ_API_KEY=your_groq_api_key
+GROQ_MODEL=openai/gpt-oss-20b
+```
 
-- A SQLite database containing generated records and workflow history.
-- CSV exports of database tables.
-- JSON exports of database tables.
-- An SQL export for inspection or reconstruction, depending on the export implementation.
-- Validation and anomaly-detection results printed during execution.
+Replace the placeholder with your own API key. Never commit `.env` to GitHub or include API keys in screenshots, source code, or logs.
 
-Generated files are stored in the project's `data/` and `exports/` directories.
+### 5. Initialize or prepare the database
 
-## 10. Validation
+The project uses SQLite. Follow the setup instructions in `README_WEBAPP.md` and the database utilities in `src/` to prepare the database.
 
-Validation checks cover:
+If you regenerate the synthetic dataset, review the generator and anomaly-injection scripts first. Do not regenerate or overwrite an existing database containing records you want to preserve.
 
-- Expected baseline record counts
-- Primary-key uniqueness and foreign-key integrity
-- Enrollment and submission consistency
-- Rubric score limits and grade reconciliation
-- Workflow and lifecycle consistency
-- Resubmission and appeal relationships
-- Audit-history requirements
-- Detection of the four predefined anomaly categories
+### 6. Start the FastAPI application
 
-Intentional anomaly cases are documented separately from ordinary data-integrity checks so that the pipeline can demonstrate detection without treating the test scenarios as valid production records.
+From the project root:
 
-## 11. Reproducibility
+```powershell
+python -m uvicorn webapp.main:app --reload
+```
 
-The fixed seed `20261022` supports deterministic synthetic data generation. For a reproducible run:
+Open the following addresses in your browser:
 
-1. Start from a fresh database or the documented clean starting state.
-2. Run the pipeline from the project root.
-3. Execute the automated tests.
-4. Review the generated exports and validation output.
+- Application: http://127.0.0.1:8000
+- API documentation: http://127.0.0.1:8000/docs
+- Health check: http://127.0.0.1:8000/api/health
+- AI configuration status: http://127.0.0.1:8000/api/ai/status
 
-Reproducibility depends on the generation and injection scripts being deterministic and safe to rerun only under their documented conditions.
+The AI feature requires a valid API key and network access to the Groq service.
 
-## 12. Limitations and Future Improvements
+### 7. Run the Streamlit interface
 
-- The dataset is synthetic and does not represent real learner information.
-- Anomaly detection is rule-based and limited to the explicitly implemented checks.
-- The project uses SQLite for local execution rather than a production database service.
-- Further improvements could include broader edge-case testing, richer audit validation, a reviewer interface, and optional AI-generated explanations of detected anomalies.
+If using the Streamlit interface, start it with:
 
-## 13. Responsible Use of AI
+```powershell
+python -m streamlit run app.py
+```
 
-AI assistance was used during project development and documentation. The data generation, database operations, validation, and anomaly-detection behavior should be understood through the submitted source code and tests. Any AI-generated explanation should remain separate from the deterministic detection result and should not replace business-rule validation.
+## Validation and Testing
 
-## 14. Author and Submission Notes
+Run the data-integrity checks:
 
-This project was prepared as a take-home assignment for the Associate AI Forward Deployed Engineer role at YottaFlex.ai.
+```powershell
+python -m src.validate_data
+```
 
-Before submission, verify that the repository contains the final source code, tests, documentation, required exports, and any requested prompt history. Do not include virtual environments, secrets, temporary diagnostic scripts, or unnecessary backups.
+Run the workflow validation:
+
+```powershell
+python -m src.validate_workflows
+```
+
+Run the automated tests:
+
+```powershell
+python -m pytest -q
+```
+
+The project has passed the data-validation checks, and the workflow validation checks passed during development. Run the commands in your own environment to verify the current database and code.
+
+## Engineering Decisions
+
+### Deterministic rules plus LLM explanations
+
+The application separates detection from interpretation. This keeps business-rule findings reproducible and makes the explanation layer easier to evaluate independently.
+
+### SQLite for persistence
+
+SQLite provides a lightweight database suitable for a self-contained assignment-management project without requiring a separate database server.
+
+### Auditability and validation
+
+Workflow checks, audit events, known anomaly scenarios, and structured exports help make the application easier to inspect and debug.
+
+### Environment-based configuration
+
+API credentials and model configuration are supplied through environment variables rather than being embedded in source code.
+
+## Current Scope and Limitations
+
+- The project is a demonstration application, not a production-ready academic platform.
+- The demonstration role switch is not a substitute for production authentication and authorization.
+- LLM-generated explanations can be incomplete or incorrect and should be reviewed before action is taken.
+- The LLM does not independently validate business rules or guarantee that an anomaly is genuine.
+- Production deployment would require appropriate authentication, authorization, input validation, secret management, monitoring, and privacy controls.
+- API availability, rate limits, and model access depend on the configured provider.
+
+## Future Improvements
+
+- Add production-grade authentication and role-based access control.
+- Add more anomaly rules and regression tests.
+- Improve the presentation of AI explanations and supporting evidence.
+- Add structured logging, monitoring, and error handling for LLM requests.
+- Introduce reviewer feedback to evaluate explanation quality.
+- Expand automated tests for API endpoints and end-to-end workflows.
+
+## Author
+
+**Hema Sri**
+
+AI and Machine Learning | Python | Data Engineering | LLM Integration
+
+GitHub: [Hema5430](https://github.com/Hema5430)
+
+---
+
+*Built as an assignment-management and data-quality intelligence project, combining deterministic validation with LLM-assisted explanations for human review.*
